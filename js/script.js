@@ -8,9 +8,7 @@
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear();
-
-    let dayMonth = "1/2/", //enter data in the format dd/mm/
-        birthdayInput = "12/2/26", //enter data in the format dd/mm/yy (more important)
+    birthdayInput = "13/6/25",
         [bDay, bMonth, bYear] = birthdayInput.split("/");
 
     let birthdayYear = bYear ? "20" + bYear : yyyy;
