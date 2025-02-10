@@ -8,7 +8,7 @@
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear();
-    birthdayInput = "13/6/25",
+        birthdayInput = "13/6/25",
         [bDay, bMonth, bYear] = birthdayInput.split("/");
 
     let birthdayYear = bYear ? "20" + bYear : yyyy;
@@ -30,7 +30,7 @@
                 document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
                 document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
             } else {
-                document.getElementById("headline").innerText = "It's my birthday!";
+                document.getElementById("headline").innerText = "Matura czy rura???";
                 document.getElementById("countdown").style.display = "none";
                 document.getElementById("content").style.display = "block";
                 clearInterval(x);
